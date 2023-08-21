@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shipments",
+  "info": {
+    "singularName": "shipment",
+    "pluralName": "shipments",
+    "displayName": "shipment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "trackingCode": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "id"
+    },
+    "shipmentDetails": {
+      "type": "richtext",
+      "required": true
+    },
+    "orderDate": {
+      "type": "date"
+    },
+    "shippingStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Order Placed",
+        "Order Confirmed",
+        "Processing",
+        "Dispatched/Shipped",
+        "In Transit",
+        "Arrived at Destination Country",
+        "Customs Clearance",
+        "Out for Delivery",
+        "On Hold",
+        "Delivered",
+        "Failed Delivery"
+      ],
+      "default": "Order Placed",
+      "required": true
+    },
+    "Products": {
+      "displayName": "Details",
+      "type": "component",
+      "repeatable": true,
+      "component": "id.details",
+      "required": false
+    }
+  }
+}

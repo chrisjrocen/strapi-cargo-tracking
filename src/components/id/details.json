@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_id_details",
+  "info": {
+    "displayName": "Details",
+    "icon": "shoppingCart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "unitPrice": {
+      "type": "decimal"
+    },
+    "qty": {
+      "type": "decimal"
+    },
+    "totalPrice": {
+      "type": "decimal"
+    },
+    "productName": {
+      "type": "string"
+    }
+  }
+}
