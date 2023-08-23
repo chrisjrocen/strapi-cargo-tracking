@@ -43,12 +43,16 @@
       "default": "Order Placed",
       "required": true
     },
-    "Products": {
-      "displayName": "Details",
-      "type": "component",
-      "repeatable": true,
-      "component": "id.details",
-      "required": false
+    "productName": {
+      "type": "string",
+      "required": true
+    },
+    "productQty": {
+      "type": "integer",
+      "required": true
+    },
+    "price": {
+      "type": "biginteger"
     }
   }
 }
