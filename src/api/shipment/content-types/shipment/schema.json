@@ -20,10 +20,7 @@
     },
     "shipmentDetails": {
       "type": "richtext",
-      "required": true
-    },
-    "orderDate": {
-      "type": "date"
+      "required": false
     },
     "shippingStatus": {
       "type": "enumeration",
@@ -41,15 +38,15 @@
         "Failed Delivery"
       ],
       "default": "Order Placed",
-      "required": true
+      "required": false
     },
     "productName": {
       "type": "string",
-      "required": true
+      "required": false
     },
-    "productQty": {
+    "quantity": {
       "type": "integer",
-      "required": true
+      "required": false
     },
     "price": {
       "type": "biginteger"
