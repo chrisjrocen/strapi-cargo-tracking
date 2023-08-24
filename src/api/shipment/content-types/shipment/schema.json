@@ -18,7 +18,7 @@
       "unique": true,
       "regex": "id"
     },
-    "shipmentDetails": {
+    "details": {
       "type": "richtext",
       "required": false
     },
